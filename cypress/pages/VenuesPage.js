@@ -1,26 +1,26 @@
 class VenuesPage {
+  elements = {
+    getCreateNewVenueButton: () =>
+      cy.get('button').contains('Create new venue'),
+    getNameInput: () => cy.get('#name'),
+    getAddressInput: () => cy.get('#address'),
+  };
 
-    elements = {
-        getCreateNewVenueButton: () => cy.get('button').contains('Create new venue'),
-        getNameInput: () => cy.get('#name'),
-        getAddressInput: () => cy.get('#address'),
-    };
+  clickNewVenueButton() {
+    this.elements.getCreateNewVenueButton().click();
+  }
 
-    clickNewVenueButton() {
-        this.elements.getCreateNewVenueButton().click();
-    }
+  writeVenueName(venue) {
+    this.elements.getNameInput().clear().type(venue);
+  }
 
-    writeVenueName(venue) {
-        this.elements.getNameInput().clear().type(venue);
-    }
+  writeVenueAddress(address) {
+    this.elements.getAddressInput().clear().type(address);
+  }
 
-    writeVenueAddress(address) {
-        this.elements.getAddressInput().clear().type(address);
-    }
-
-    addNewVenue() {
-        cy.get('form').submit();
-    }
+  addNewVenue() {
+    cy.get('form').submit();
+  }
 }
 
-export default VenuesPage
+export default VenuesPage;

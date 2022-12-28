@@ -1,4 +1,4 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
   viewportWidth: 1920,
@@ -9,6 +9,6 @@ module.exports = defineConfig({
   env: {
     username: 'marko.petricevic+admin@servalit.com',
     password: 'Test12345!',
-    apiSecret: 'AIzaSyAg8tRQH9OBZDvie-m23VEksTKSd_d7zKE'
+    apiSecret: 'AIzaSyAg8tRQH9OBZDvie-m23VEksTKSd_d7zKE',
   },
-})
+});
