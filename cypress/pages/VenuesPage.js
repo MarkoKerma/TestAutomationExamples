@@ -4,7 +4,6 @@ class VenuesPage {
         getCreateNewVenueButton: () => cy.get('button').contains('Create new venue'),
         getNameInput: () => cy.get('#name'),
         getAddressInput: () => cy.get('#address'),
-        // getSearchInput: () => cy.get('[placeholder="Search results"]'),
     };
 
     clickNewVenueButton() {

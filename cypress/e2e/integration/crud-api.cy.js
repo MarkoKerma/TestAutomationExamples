@@ -185,12 +185,6 @@ describe('Integration testing CRUD operations', () => {
                         }
                     ).then(response => {
                         expect(response.body.data.venues.totalCount).equal(numberOfVenuesBefore);
-                        // console.log(customJSCommands.searchInArray(response.body.data.venues.items, "9LSy3joM"));
-                        // expect(customJSCommands.searchInArray(response.body.data.venues.items, "9LSy3joM")).to.be.false;
-                        // const listOfVenues = response.body.data.venues.items;
-                        // const deletedVenue = listOfVenues.find((venue) => venue.name === venueName);
-                        // console.log(deletedVenue)
-                        // expect(deletedVenue).equal("not found");
                     })
                 })
             });
