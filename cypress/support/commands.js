@@ -27,7 +27,7 @@
 Cypress.Commands.add('getLoginToken', () => {
     cy.request({
       method: 'POST',
-      url: 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAg8tRQH9OBZDvie-m23VEksTKSd_d7zKE',
+      url: 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + Cypress.env('apiSecret'),
       headers: {
         origin: 'https://dev.app.urevited.com',
       },

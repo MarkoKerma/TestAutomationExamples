@@ -8,6 +8,7 @@ module.exports = defineConfig({
   },
   env: {
     username: 'marko.petricevic+admin@servalit.com',
-    password: 'Test12345!'
+    password: 'Test12345!',
+    apiSecret: 'AIzaSyAg8tRQH9OBZDvie-m23VEksTKSd_d7zKE'
   },
 })
